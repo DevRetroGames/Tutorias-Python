@@ -14,6 +14,14 @@ Este repositorio contiene ejemplos de código, ejercicios y recursos creados con
 
 ---
 
+## 🛠️ Entorno de Desarrollo
+
+Este repositorio utiliza **DevContainers** para proporcionar un entorno de desarrollo consistente y aislado, con la siguiente configuración:
+
+- 🐍 Python 3.9
+
+---
+
 ## 🛡️ Licencia
 
 Este repositorio está cubierto por la [Licencia MIT](LICENSE), pero su uso está **limitado a fines educativos**:

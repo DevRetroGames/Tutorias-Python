@@ -1,0 +1,15 @@
+{
+  "name": "DevRetroGames_300725183240_Tutorias_Python",
+  "dockerComposeFile": [
+    "docker-compose.yml"
+  ],
+  "service": "DevRetroGames_300725183240_Tutorias_Python_devcontainer",
+  "workspaceFolder": "/Tutorias_Python",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        
+      ]
+    }
+  }
+}
