@@ -1,5 +1,15 @@
 #!/usr/bin/env python3
 
+import sys
+
+# Dictionary of question:answer pairs
+QUESTIONS = {
+    "Which planet is known as the Red Planet?": "mars",
+    "What is the largest ocean in the World?": "pacificocean",
+    "Who was the first Prime Minister of India?": "jawaharlalnehru",
+    "What is the chemical symbol for Gold?": "au",
+}
+
 def _input_user(msg: str) -> str:
     """
     Private method to capture the user's response.
@@ -29,9 +39,9 @@ def _quiz(question: str, correct_answer: str, number_question: int) -> int:
         int: Returns 1 if the answer is correct, otherwise 0.
     """
     full_question = f"Question {number_question}: {question}: "
-    return 1 if _input_user(full_question) == correct_answer else 0
+    return int(_input_user(full_question) == correct_answer)
 
-def main():
+def main() -> None:
     """
     Main method that runs the quiz.
 
@@ -44,16 +54,7 @@ def main():
                 logic  
     ** Note **
     """
-    msg = "Welcome to the GK quiz! Answer the following question"
-    print(msg)
-
-    # Dictionary of question:answer pairs
-    questions = {
-        "Which planet is known as the Red Planet?": "mars",
-        "What is the largest ocean in the World?": "pacificocean",
-        "Who was the first Prime Minister of India?": "jawaharlalnehru",
-        "What is the chemical symbol for Gold?": "au",
-    }
+    print("Welcome to the GK quiz! Answer the following question")
 
     try:
         '''
@@ -67,13 +68,14 @@ def main():
         '''
         score = sum(
             _quiz(question, answer, i)
-            for i, (question, answer) in enumerate(questions.items(), start=1)
+            for i, (question, answer) in enumerate(QUESTIONS.items(), start=1)
         )
 
         # Print final score
-        print(f"You scored {score}/4")
+        print(f"You scored {score}/{len(QUESTIONS)}")
     except KeyboardInterrupt:
         print("\nOperation cancelled by user.")
+        sys.exit(0)
 
 if __name__ == "__main__":
     """

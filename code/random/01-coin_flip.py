@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+import sys
 import random
 import time
 
@@ -24,10 +25,14 @@ def _flip_coin() -> str:
     return "Cara" if _random_value() == 1 else "Cruz"
 
 def main() -> None:
-    for msg, delay in zip(MESSAGES, DELAYS):
-        _dramatic_wait(msg, delay)
-    
-    print(f"Result: {_flip_coin()}")
+    try:
+        for msg, delay in zip(MESSAGES, DELAYS):
+            _dramatic_wait(msg, delay)
+        
+        print(f"Result: {_flip_coin()}")
+    except KeyboardInterrupt:
+        print("\nOperation cancelled by user.")
+        sys.exit(0)
 
 if __name__ == "__main__":
     main()
