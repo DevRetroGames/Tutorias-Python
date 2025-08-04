@@ -1,9 +1,8 @@
 version: "3.9"
 
 services:
-  DevRetroGames_300725183240_Tutorias_Python_devcontainer:
-    image: mcr.microsoft.com/devcontainers/base:noble
-    container_name: DevRetroGames_300725183240_Tutorias_Python_devcontainer
+  devretrogames_300725183240_tutorias_python_devcontainer:
+    container_name: devretrogames_300725183240_tutorias_python_devcontainer
     build:
       context: .
       dockerfile: Dockerfile

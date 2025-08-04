@@ -3,7 +3,7 @@
   "dockerComposeFile": [
     "docker-compose.yml"
   ],
-  "service": "DevRetroGames_300725183240_Tutorias_Python_devcontainer",
+  "service": "devretrogames_300725183240_tutorias_python_devcontainer",
   "workspaceFolder": "/Tutorias_Python",
   "customizations": {
     "vscode": {

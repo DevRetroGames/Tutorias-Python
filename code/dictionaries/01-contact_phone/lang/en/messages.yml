@@ -1,0 +1,27 @@
+menu:
+  - "📒 Contact Book Menu:"
+  - "1. Show all contacts"
+  - "2. Search for a contact"
+  - "3. Add a new contact"
+  - "4. Add a new phone number to existing contact"
+  - "5. Exit"
+
+prompts:
+  select_option: "Select an option (1-5): "
+  search_name: "Name of contact to search: "
+  contact_name: "Contact name: "
+  enter_name: "Enter the name: "
+  enter_number: "Enter the number: "
+
+messages:
+  contacts_list: "📃 List of contacts:"
+  contact_added: "✅ Contact added successfully."
+  number_added: "✅ Number added successfully."
+  contact_not_found: "❌ Contact not found."
+  exiting: "👋 Exiting..."
+  invalid_option: "❗ Invalid option. Please try again."
+  operation_cancelled: "Operation cancelled by user."
+
+contacts:
+  not_found: "{name} is not in the contact book."
+  display: "\n{name}: {phones}"

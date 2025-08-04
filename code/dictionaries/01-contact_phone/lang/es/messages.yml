@@ -1,0 +1,27 @@
+menu:
+  - "📒 Menú de la Agenda:"
+  - "1. Mostrar todos los contactos"
+  - "2. Buscar un contacto"
+  - "3. Agregar un nuevo contacto"
+  - "4. Agregar un nuevo número telefónico a un contacto existente"
+  - "5. Salir"
+
+prompts:
+  select_option: "Seleccione una opción (1-5): "
+  search_name: "Nombre del contacto a buscar: "
+  contact_name: "Nombre del contacto: "
+  enter_name: "Ingrese el nombre: "
+  enter_number: "Ingrese el número: "
+
+messages:
+  contacts_list: "📃 Lista de contactos:"
+  contact_added: "✅ Contacto agregado exitosamente."
+  number_added: "✅ Número agregado exitosamente."
+  contact_not_found: "❌ Contacto no encontrado."
+  exiting: "👋 Saliendo..."
+  invalid_option: "❗ Opción inválida. Por favor, intente nuevamente."
+  operation_cancelled: "Operación cancelada por el usuario."
+
+contacts:
+  not_found: "{name} no se encuentra en la agenda."
+  display: "\n{name}: {phones}"
