@@ -13,8 +13,8 @@ class ContactBook:
         }
         self._messages = messages
 
-    def _input_user(self, prompt: str) -> str:
-        return input(prompt).strip().lower()
+    def _input_user(self, msg: str) -> str:
+        return input(msg).strip().lower()
 
     def _search_contact(self, name: str) -> bool:
         return name in self._contacts
