@@ -1,0 +1,14 @@
+prompts:
+  ask_amount: "How much money will Mr. Frodo invest? $"
+  ask_days: "For how many days will you invest? "
+
+messages:
+  invalid_input: "Invalid input. Please try again."
+  amount_must_be_positive: "The amount must be greater than 0."
+  days_must_be_positive: "The number of days must be greater than 0."
+  investment_summary: "\nMr. Frodo's Investment Summary:"
+  initial_amount: "Initial amount:        ${:,.2f}"
+  days_invested: "Days invested:         {} days"
+  months_counted: "Months counted:        {} month(s) (30 days each)"
+  profit_per_month: "Profit per month:      ${:,.2f}"
+  total_amount: "Total accumulated:    ${:,.2f}"

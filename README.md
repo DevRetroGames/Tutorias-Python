@@ -18,7 +18,7 @@ Este repositorio contiene ejemplos de código, ejercicios y recursos creados con
 
 Este repositorio utiliza **DevContainers** para proporcionar un entorno de desarrollo consistente y aislado, con la siguiente configuración:
 
-- 🐍 Python 3.9
+- 🐍 Python 3.13
 
 ---
 
