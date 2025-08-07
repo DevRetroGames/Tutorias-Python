@@ -12,3 +12,4 @@ messages:
   months_counted: "Meses contabilizados:  {} mes(es) (30 días cada uno)"
   profit_per_month: "Ganancia por mes:      ${:,.2f}"
   total_amount: "Total acumulado:       ${:,.2f}"
+  operation_cancelled: "Operación cancelada por el usuario."
