@@ -27,7 +27,7 @@ def _get_value(value: str) -> int:
   msg: str = f"enter {value}"
   return int(_get_user_input(msg))
   
-def _definir_resultado() -> str:
+def _get_result() -> str:
   operation: str = _get_operation()
   operation_no_cero = ["/", "%", "//"]
 
@@ -48,7 +48,7 @@ def _definir_resultado() -> str:
   
 def main() -> None:
   try:
-    print(_definir_resultado())
+    print(_get_result())
   except KeyboardInterrupt:
     print("\nOperation cancelled by user.")
     exit(0)
